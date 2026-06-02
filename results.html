@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poll Results Page</title>
+
+    <style>
+        .bar {
+            width: 200px;
+            height: 20px;
+            border: 1px solid black;
+        }
+
+        .fill1 {
+            width: 60%;
+            height: 20px;
+            background-color: green;
+        }
+
+        .fill2 {
+            width: 25%;
+            height: 20px;
+            background-color: blue;
+        }
+
+        .fill3 {
+            width: 15%;
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+    <center>
+        <h1>Poll Results</h1>
+    </center>
+
+    <h2>Poll Name: Society Representative Election 2026</h2>
+
+    <h3>🏆 Winner: Ravi Kumar</h3>
+
+    <table border="1" cellpadding="10" width="80%">
+        <tr>
+            <th>Candidate Name</th>
+            <th>Votes Received</th>
+            <th>Vote Percentage</th>
+            <th>Progress Bar</th>
+        </tr>
+
+        <tr>
+            <td>Ravi Kumar</td>
+            <td>120</td>
+            <td>60%</td>
+            <td>
+                <div class="bar">
+                    <div class="fill1"></div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Priya Sharma</td>
+            <td>50</td>
+            <td>25%</td>
+            <td>
+                <div class="bar">
+                    <div class="fill2"></div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Arjun Reddy</td>
+            <td>30</td>
+            <td>15%</td>
+            <td>
+                <div class="bar">
+                    <div class="fill3"></div>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

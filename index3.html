@@ -1,24 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Society survey and Represntative Election Management system</title>
+    <title>Society Survey and Representative Election Management System</title>
 </head>
-<body>
-    <header style="display: flex;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAACUCAMAAAATdsOFAAAA4VBMVEX///////0yJYEinlIJnEjqn0KSx6XT6No2ol8AmkQPm0p/wZf///uJwpwAmEr8//9su4YvIYDx9/MAAG4qG34AkzwaAHnqnDgmFX0wJHz19Pf57Nv34s3lmkDpmCrk4+nE4Mwdo1zxzKHJx9eKha2qpsXSz+DGw9lsZpufm7y0sczY1uMjEH5ANIhCOIi6t85jW5lJQIjuuXbslB/yxZnswIP49OrwrWvuqVnurmPy3b6228bppEvyypPy07Bpr4DksWZYT5mp1Lh9dqyJgrNOrm1WTY6blb96dqPr6Pfq6eZ7g2r3AAAKhElEQVR4nO1cC3uaPBtO2Ot6GO9oShoBLWwVz/FAbV3bue7t7Kr9/v8P+p4ngAW7HthE1uvi3i4nIeid5DknjpASJUqUKFGiRIkSJUqUKFGiRIkSJUqUKAL0F036L5v/OhjwZw1UNwyiF0EmCyiZXtXpepter+tPTDulyY4FwtD104l7dpgkoRP9fOKepztOa/V6vTYNhSnGc9Qf3Xu0tn8KY+pWjme11Jca9eqsMklQNOpnXy5mlcrF5fmVnqCw8/4xPsU39R+p9q8bF0A6nc0q1W+pydTPq5XjStyB0PoXt1qpVisVeHVn1/F4yKe9fx5h7yjifvh9L3V778OmqRPjDDhVpsbDAhu1GXA8WQ3kDFmvUJ2c16Ixfdh79xgfI4o7u+n2/Y8bJo4aOascu9cJMTC+uZXKrKaWgdLpOTI/dt3qcRVegLx7UQ+V9evR3kcFRW1vH9/uH31NUN//GGP/6GDD1EkoHpWLhFrpwLx6Fo1lelqtgERdnEx1g06vvoAkgexM1V369fsB4sPu/rt3Pz+o999/kAT1gwe837iaAuUrlOKrh0++nhzDpIdjUStQrVwrH0UNQ6//B73d/6bhoxFAcvb/jS+MB+pH+foGSukFiPZp/C3G9AuQPddRJCipg7S4s7qh+lEkO0Xu1Wt0ZNigmv8F6h/CLjSeAkXdCNtUpzxgXIF9rNTjS1yESXhF9VOQ8FnNSBpKAiM9nk2TZCLqKSjqh7kQXoEa+iXOc8QFhbsaib5RR628TrkXWInZMTYmUBR1wAnKQKh6ICLINnxvwI3qbF1gjW/QeplsKZB67RLIfAvpwqRXLqchXR1XQA2DJj37FazFZJp4/knq+Qc5RjjtKDzTCRjxWBqm6JvqBmojjsXz7h2lqRcrbXie+j9fPyF2Nm8XY1BSA82rKsI4iFVIM1UXVHXxFp274KbTdCBkAxs0uXoFdfCt6I0+/yC5QY/EBCwjBFkQ0aSo6zrMetOSFmPcEvZIydEk4QieoR7GBgd5ynwNPE/lKpQcd2X4phW1BLruzAXTFGxmdo1r13WTweaT1PfDEOF7ruqKCnkK/gbs3uUqFFNrUAervgDmTJimKW1bkz39+qSetPVPUt/9DNg92MmTuXJEbg0tY7VO4gxJWZgTgzSkpjHN73sNmH2bD721h58xjjT3VIqiJ3JPT8OQYJXcnbho1+lSAvO2aulyponmGp9n7TrNIUFKUTdO3CgeT/pJ9KaT2v0Nt0U3tO3OXGp8uJa/PUldJ7mFLyvoylgjLhO+hurnrnuhtxhjlhPJ9gh01cwy63kDAsFw2sF5PtCiZHpyVgNRZ3zohHSpN2Sa2fqLqGOwO0Hqrm48WuAGB4vuhIUZSsYchT2FgqlTClHVsXtmpHSKosb2A26brWjWya3UrE762aepJ5Ajd72GWX8t3aiUzMGJXsRNI6HZQdo8vuBNFX7mZ9whwf7muie/TMkWlsbvom7UMzU2aKXuv4b63s88WJOYVa32WNARbUvTuBPeokSAvUkL+/ujRG4aYWd3P13M+JwL6Zfg2EyzRvFVR2rST9yl5PAnykN61MaP9KzvftoS2TXccc1aCXvTBD11HpiCOhzuHJL1+qqxk0auLvVpLIRiG6IvGbO9N1GAB5J9UM1hP7r0hmBwlFN68PEJN0bXni0UELlYTJPt6NKZW1oY0oDZ12OT1Gj6frd3H3F12s1ut+etD6QIdCwMwCKaXRCfsXqnR9RoO7CkxL9jXA6nO5CSWxafr4fHBaApwLJH5pGMGEZghLR63W53BHLk3AquUiibSbPreAOTw1uA0EbPfuw20OIakzH1PkZgnudrAjHwvVsBvLkUFgyA8fnQwn8siOw1bjWKFncPzKMYRWGMM2a2nAcyTFeZxZCxvFveLoegE4zbQJnddcbwqvGBVzB1fQmquYyvfGlriqQUyB//2iNk6CwGDK+sMZojDyI1TS6e/tTtoAlhzCBe+55Q8y0Gt81bJtXbXnQP+gHd2AeA4+XjolW1AZMsYxKeaSPdJWRO1FvCEvAb5V0xzuygoLfR+EDLPcQ7rFWodQfLDqope/G1iRp4E04tHVtgK2NXS9oi4b2cMC8pUtphNoEgv42vxyjEjfAWxJW2FThxx0NwvFoj7ugLTS6L3vhuCsZXcwsxDVuZDm8sRPdhYtHixI6XjKTGmEOKxb3J7EEr3G+hrSR14jUbiRhmNOTdlf9XLqBPioUz4LbsRX7fG3AmW0k5SARi94kUyvlFEr51YAlslWFM50IErzB6lPgqNyzWK1FIp8GoxPK98Puv0D5KRhZobdEOtQ8KJ1Ji+wpC9B6CAav9csdc4YHYmhkDQaoTyEt44bGAb9my83K3JMDSgGXnnWLNIyVNzpiV+bkGuKigX6iwU9ofMFtkTqcdEHZZdNDuBECimdWrO2PMZIvOUedSs5ZZSVCVyRadXYNlZzdZbbTeAMvOiw5jHBOi9Mw22gvAqDZe7pcr9AADkqwC40DyIW5f7pgnKIHMX84zrr1OFhAFB/lQegJRwpYkARnQ403TFz+mAUkev98ot5e+EzdjaMoU9gcgMRmjb6pK3Hy01VQJvvTQSXwjXHck1u+y4g6SV3971Clp+YFpmgO/TWm8A0YWEtLQzAk+Vv3GztZMu7Ngqo4Ir/7Dt46YxszM5dtUiTtnUCyAYnWLc1tjsuPFEw1hjBZvQ74ejgYqsqWYXYWqMOGDYIDnYETQj9lCzC4XmWMpiCCE/3K3jcATWPH0+/1+17Y0TQ7bEV0VfWcUGIrCnigy5YuFsBlTBVDaGkoYBm+GNr6N0XdGy66TFh4E2k7p0blT29NUfa83xuKoGVU9IYzhWbM8LHHbWXPD30RY+48PNzpLFHh508AS6I3aR8oE+IyltOV8KxtLmA+ZCdnsSq7ZFsd16Ca3IV+NpmVzeyuZ0n263EZJOxDMBkvj9xYWluyyfmBLY0xuxbIrWfdX+4owW546LciFidVz0cjs1IcqN9zGtINYMNZM/oyHdk0eHXVkmW00xe0N63Y7EiM4A4bJX82Q/tgSQlooOH5mEj3cvNyOeQzPZPpJfdSdRtOf3zBT2P3MTgkP0Witl3v+MSg59AXulI4ftsrD3zs4juO1vKwHAOFJDGN6L/fcCHoYekltI3UrGKramdlOLKCT0QDPHtmbcIKQcI2EvbUwBg/aIXe+2MiPT/sDKbZX8KXOWIW+c2cTuVnfb27n1CMClBLDdg240z+e+PTJn/yBkTZkeVbgFV3uzAyqkx4oqy15T2nYGxoA/jSmFeAZAD4frVeU/npAqhGAwNuWdVfsXn9mKLJLCRGNzU2t6ZFNGMotwukFJmirzUXQvX9b1CHy6gUCI3VLDm+9tyb0tN3RLBWsm37LeVNTD1wbSyEVeTZvvCXqCNpfhucBpTbGOtxf/19TJAApwzKQ6jCjuOn9r2g6r4faKiBecyDwJKMlbpoOWds7+Nvh9AZobjRuBd3tVc03ArCMvTGz8Chm6tDXG4Aq5rXHaG5stq26+Sbh9DsmzPzWcuWNAWNKcn87tDpFH3v9XfQbRR/r+k28qUimRIkSJUqUKFGiRIkSJd4q/g/4+QJKovWiGQAAAABJRU5ErkJggg==" width="50" alt="Election"> <h1>Election Management system</h1></header>
-    <nav style="display: flex; gap: 40px;"><a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact us</a></nav> <br>
-    <main>
-        <section>
-    <p>Welcome to the Election Management System. Your vote is your voice. Participate in elections, share your opinions through surveys, and help shape the future of our community.</p>
-    </section>
-       <section><h4 style="color: blueviolet;">Purpose :</h4>The Survey and Polling System is designed to collect opinions, feedback, and preferences from society members in a simple and efficient manner. It helps organizations make informed decisions based on the views of the community. The system ensures transparency, accuracy, and easy participation for all members.</section>
-    <section><h4 style="color:red;">Announcement</h4>We are pleased to announce the Society Representative Election. All eligible members are encouraged to participate and cast their votes to elect their representatives. Your vote is important in selecting leaders who will represent the interests and concerns of the community. Please review the candidate information carefully and submit your vote before the election deadline.</section><br>
-    <a href="#"><button>Register</button></a>    
-    <a href="#"><button>Login</button></a>
-    <a href="#"><button>View polls</button></a>
-</main>
+
+<body bgcolor="white">
+
+    <table width="100%" bgcolor="#4B0082">
+        <tr>
+            <td width="80">
+                <img src="logo.png" width="60" alt="Election Logo">
+            </td>
+            <td>
+                <font color="white" size="6">
+                    <b>Election Management System</b>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact Us</a>
+
+    <hr>
+
+    <h2>Welcome</h2>
+    <p>
+        Welcome to the Election Management System.
+        Your vote is your voice. Participate in elections,
+        share your opinions through surveys, and help shape
+        the future of our community.
+    </p>
+
+    <h2><font color="blue">Purpose of the System</font></h2>
+    <p>
+        The Survey and Polling System is designed to collect
+        opinions, feedback, and preferences from society members
+        in a simple and efficient manner. It helps organizations
+        make informed decisions based on the views of the community.
+        The system ensures transparency, accuracy, and easy
+        participation for all members.
+    </p>
+
+    <h2><font color="red">Society Representative Election Announcement</font></h2>
+    <p>
+        We are pleased to announce the Society Representative Election.
+        All eligible members are encouraged to participate and cast
+        their votes to elect their representatives.
+        Your vote is important in selecting leaders who will represent
+        the interests and concerns of the community.
+    </p>
+
+    <br>
+
+    <a href="#">
+        <input type="button" value="Register">
+    </a>
+
+    <a href="#">
+        <input type="button" value="Login">
+    </a>
+
+    <a href="#">
+        <input type="button" value="View Polls">
+    </a>
+
+    <hr>
+
+    <center>
+        <font color="white">
+            <table width="100%" bgcolor="#4B0082">
+                <tr>
+                    <td align="center">
+                        2026 Election Management System
+                    </td>
+                </tr>
+            </table>
+        </font>
+    </center>
+
 </body>
 </html>
