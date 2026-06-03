@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .div1{
+            padding: 10px;
+            margin: 10px;
+            width: 20px;
+            height: 20px;
+            animation: anim 2s ease-out 3;
+            background-color: blue;
+            border: 5px solid black;
+            /* transition: all; */
+        }
+        @keyframes anim{
+            0%{
+                background-color: blue;
+                transform: rotate(60deg);
+                width: 50px;
+                border-radius: 0%;
+                padding: 50px;
+            }
+            50%{
+                background-color: purple;
+                transform: origin 25px;
+                transform: rotate(120deg);
+                width:100px;
+                border-radius: 10%;
+                padding: 50px;
+            }
+            100%{
+                background-color: green;
+                transform: origin 50px;
+                transform: rotate(180deg);
+                width:150px;
+                border-radius: 50%;
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="div1"></div>
+</body>
+</html>
