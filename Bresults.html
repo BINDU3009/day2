@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Results</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <span class="navbar-brand">
+                Election Management System
+            </span>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-4">
+            Poll Results
+        </h2>
+
+        <!-- Poll Name -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h4>President Election 2026</h4>
+            </div>
+        </div>
+
+        <!-- Winner Highlight -->
+        <div class="alert alert-success text-center">
+            🏆 <strong>Winner: Rahul Kumar</strong>
+            <br>
+            Total Votes: 120 (40%)
+        </div>
+
+        <!-- Result Table -->
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mb-3">Result Summary</h4>
+
+                <table class="table table-bordered table-striped">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Candidate Name</th>
+                            <th>Votes Received</th>
+                            <th>Vote Percentage</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Rahul Kumar</td>
+                            <td>120</td>
+                            <td>40%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Priya Sharma</td>
+                            <td>90</td>
+                            <td>30%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Arjun Reddy</td>
+                            <td>45</td>
+                            <td>15%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sneha Patel</td>
+                            <td>30</td>
+                            <td>10%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vikram Singh</td>
+                            <td>15</td>
+                            <td>5%</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+        <!-- Progress Bars -->
+        <div class="card mt-4">
+            <div class="card-body">
+
+                <h4 class="mb-3">
+                    Vote Percentage
+                </h4>
+
+                <p>Rahul Kumar - 40%</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success"
+                         style="width:40%">
+                        40%
+                    </div>
+                </div>
+
+                <p>Priya Sharma - 30%</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-primary"
+                         style="width:30%">
+                        30%
+                    </div>
+                </div>
+
+                <p>Arjun Reddy - 15%</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning"
+                         style="width:15%">
+                        15%
+                    </div>
+                </div>
+
+                <p>Sneha Patel - 10%</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-info"
+                         style="width:10%">
+                        10%
+                    </div>
+                </div>
+
+                <p>Vikram Singh - 5%</p>
+                <div class="progress">
+                    <div class="progress-bar bg-danger"
+                         style="width:5%">
+                        5%
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        © 2026 Election Management System
+    </footer>
+
+</body>
+</html>
