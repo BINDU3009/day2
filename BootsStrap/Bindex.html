@@ -3,40 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Login</title>
+    <title>Society Survey and Representative Elections</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand " href="#">
-            <img src="data:image/jpeg;base64,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" width-50px alt="logo">
-            <span class="text-white ms-3">Society Survey and Representative Elections</span>
-        </a>
-          </div>
+        <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="Bindex.html" class="navbar-brand d-flex align-items-center">
+                <img src="data:image/jpeg;base64,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" alt="Logo" style="width:100px;">
+                <h2 class="text-white fw-bold ms-3 mb-0">
+                    Election Management System
+                </h2>
+            </a>
+        </div>
     </nav>
-    <nav class="navbar navbar-secondary bg-secondary">
-        <a class="text-dark" href="Bindex.html">Home</a>
-        <a class="text-dark" href="Baboutus.html">About us</a>
-        <a  class="text-dark" href="Bcontatc.html">Contact us</a>
-        <a class="text-dark" href="Blogin.html">Login</a>
-        <a class="text-dark" href="Bregister.html">Registration form</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <a href="Bindex.html" class="btn btn-secondary">Home</a>
+            <a href="Baboutus.html" class="btn btn-secondary">About us</a>
+            <a href="Bcontact.html" class="btn btn-secondary">Contact us</a>
+            <a href="Blogin.html" class="btn btn-secondary">Login</a>
+            <a href="Bregister.html" class="btn btn-secondary">Register</a>
+            <a href="Bresults.html" class="btn btn-secondary">Poll Results</a>
+        </div>
     </nav>
-    <section>
-        <h3 class="mt-3">Welcome to our website</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore repudiandae consectetur impedit maiores minima aliquid iusto animi voluptatem vel assumenda enim, voluptate eum laudantium, dicta voluptates sint. Facilis, nobis modi?</p>
-    </section>
-    <section>
-        <h4 class="text-primary">Purpose</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem voluptate rem quis nam obcaecati culpa illum, quam nesciunt iusto cupiditate optio neque mollitia vero reprehenderit commodi quaerat eius tempore.</p>
-    </section>
-    <section>
-        <h4 class="text-primary">Society representative election</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quidem voluptate rem quis nam obcaecati culpa illum, quam nesciunt iusto cupiditate optio neque mollitia vero reprehenderit commodi quaerat eius tempore.</p>
-    </section>
-    <a href="Bregister.html" class="btn btn-primary">Register</a>
-    <a href="Blogin.html" class="btn btn-info">Login</button>
-    <a href="Bpolls.html" class="btn btn-warning">View Polls</button>
+
+
+    <!-- Hero Section -->
+
+    <div class="container mt-5">
+
+        <div class="bg-light p-5 rounded shadow">
+
+            <h1 class="text-primary">
+                Welcome to Society Survey and Representative Elections
+            </h1>
+
+            <p class="lead">
+                Participate in surveys, cast your vote, and help build a
+                stronger and more transparent society through secure online
+                elections.
+            </p>
+
+            <a href="Bregister.html" class="btn btn-primary">
+                Register Now
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Purpose Section -->
+
+    <div class="container mt-5">
+
+        <h2 class="text-primary">
+            Purpose of the Survey and Polling System
+        </h2>
+
+        <p>
+            The purpose of this platform is to provide society members with
+            an easy and secure way to participate in surveys, elections,
+            and decision-making activities. This system ensures transparency,
+            fairness, and equal participation for all residents.
+        </p>
+
+    </div>
+
+    <!-- Election Announcement -->
+
+    <div class="container mt-5">
+
+        <div class="alert alert-success">
+
+            <h4>Election Announcement</h4>
+
+            <p>
+                Society Representative Elections will be held on
+                <b>15 August 2025</b>.
+                All registered members are requested to participate and
+                vote responsibly.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Features -->
+
+    <div class="container mt-5">
+
+        <h2 class="text-center text-primary mb-4">
+            Portal Features
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card shadow">
+
+                    <div class="card-body text-center">
+
+                        <h5>Online Voting</h5>
+
+                        <p>
+                            Secure voting process for electing society representatives.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card shadow">
+
+                    <div class="card-body text-center">
+
+                        <h5>Survey Management</h5>
+
+                        <p>
+                            Collect opinions and feedback from society members.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+
+                <div class="card shadow">
+
+                    <div class="card-body text-center">
+
+                        <h5>Poll Results</h5>
+
+                        <p>
+                            View election and survey results transparently.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Society Representative Election -->
+
+    <div class="container mt-5">
+
+        <h2 class="text-primary">
+            Society Representative Election
+        </h2>
+
+        <p>
+            Members can vote for their preferred candidates for the President,
+            Vice President, Secretary, and Treasurer positions.
+        </p>
+
+    </div>
+
+    <!-- Statistics -->
+
+    <div class="container mt-5">
+
+        <h2 class="text-center text-primary mb-4">
+            Election Statistics
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-3 mb-3">
+
+                <div class="card bg-primary text-white text-center">
+
+                    <div class="card-body">
+
+                        <h2>500+</h2>
+
+                        <p>Registered Members</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3 mb-3">
+
+                <div class="card bg-success text-white text-center">
+
+                    <div class="card-body">
+
+                        <h2>5</h2>
+
+                        <p>Candidates</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3 mb-3">
+
+                <div class="card bg-warning text-dark text-center">
+
+                    <div class="card-body">
+
+                        <h2>20+</h2>
+
+                        <p>Surveys Conducted</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3 mb-3">
+
+                <div class="card bg-danger text-white text-center">
+
+                    <div class="card-body">
+
+                        <h2>95%</h2>
+
+                        <p>Participation Rate</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Important Notice -->
+
+    <div class="container mt-5">
+
+        <div class="card border-danger">
+
+            <div class="card-header bg-danger text-white">
+
+                Important Notice
+
+            </div>
+
+            <div class="card-body">
+
+                <ul>
+
+                    <li>Only registered members can vote.</li>
+
+                    <li>Each member can vote only once.</li>
+
+                    <li>Voting results will be published after verification.</li>
+
+                    <li>Please carry your Society Member ID.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Why Choose Us -->
+
+    <div class="container mt-5">
+
+        <h2 class="text-primary">
+            Why Choose Our Platform?
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h5>Secure</h5>
+
+                        <p>
+                            Safe and protected voting environment.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h5>Transparent</h5>
+
+                        <p>
+                            Fair election process with clear results.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <h5>User Friendly</h5>
+
+                        <p>
+                            Easy-to-use interface for all society members.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Information -->
+
+    <div class="container mt-5 mb-5">
+
+        <h2 class="text-primary">
+            Contact Information
+        </h2>
+
+        <p>
+            <b>Email:</b> societyelection@gmail.com
+        </p>
+
+        <p>
+            <b>Phone:</b> +91 9876543210
+        </p>
+
+        <p>
+            <b>Address:</b> Green Valley Society, Hyderabad, Telangana
+        </p>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-dark text-white text-center p-4">
+
+        <h5>
+            Society Survey and Representative Elections
+        </h5>
+
+        <p>
+            Empowering Society Members Through Secure Voting and Surveys
+        </p>
+
+        <p>
+            Facebook |
+            Instagram |
+            Twitter |
+            LinkedIn
+        </p>
+
+        <p class="mb-0">
+            © 2025 Society Survey and Representative Elections.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
