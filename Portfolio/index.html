@@ -1,21 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+html{
+    scroll-behavior:smooth;
+}
+
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#6610f2);
+    color:white;
+    padding:100px 0;
+}
+
+.profile{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:5px solid white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    transition:0.4s;
+}
+
+footer{
+    background:#212529;
+    color:white;
+    padding:20px;
+}
+</style>
 
 </head>
 <body>
-    <nav class="navbar navbar-brand bg-light">
-        <div class="container">
-            <div class="navbar navbar-brand">
-            <img src="data:image/jpeg;base64,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" alt="image1">
-            <h2 class="ms-5 fw-bold">BHUKYA BINDU</h2>
-        </div>
-        </div>
-    </nav>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3" href="#home">
+My Portfolio
+</a>
+
+
+<a class="nav-link" href="index.html">Home</a>
+<a class="nav-link" href="about.html">About</a>
+<a class="nav-link" href="#skills">Skills</a>
+<a class="nav-link" href="#projects">Projects</a>
+<a class="nav-link" href="contact.html">Contact</a>
+
+</div>
+
+</div>
+
+</nav>
+
+<section id="home" class="hero text-center">
+
+<div class="container">
+
+<img src="data:image/png;base64,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"
+class="profile shadow-lg mb-4"
+alt="Profile">
+
+<h1 class="display-4 fw-bold">
+Bindu Bhukya
+</h1>
+
+<h3>
+Software Engineering Student
+</h3>
+
+<p class="lead">
+Passionate about Java, Web Development and Software Engineering.
+</p>
+
+<a href="about.html"
+class="btn btn-light btn-lg me-3">
+About Me
+</a>
+
+<a href="Resumes/PRORESUME1.pdf"
+download
+class="btn btn-success btn-lg">
+Download Resume
+</a>
+
+</div>
+
+</section>
+
+
+<section id="about" class="container py-5">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="card shadow-lg border-0">
+
+<div class="card-body">
+
+<p>
+I am a B.Tech student interested in Web Development,
+Java Programming and Software Engineering.
+I enjoy building responsive websites and solving coding problems.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="skills" class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="section-title">
+Skills
+</h2>
+
+<div class="mb-4">
+
+<label class="fw-bold">Java</label>
+
+<div class="progress">
+<div class="progress-bar bg-success"
+style="width:90%">
+90%
+</div>
+</div>
+
+</div>
+
+<div class="mb-4">
+
+<label class="fw-bold">HTML</label>
+
+<div class="progress">
+<div class="progress-bar bg-primary"
+style="width:95%">
+95%
+</div>
+</div>
+
+</div>
+
+<div class="mb-4">
+
+<label class="fw-bold">Bootstrap</label>
+
+<div class="progress">
+<div class="progress-bar bg-info"
+style="width:85%">
+85%
+</div>
+</div>
+
+</div>
+
+<div class="mb-4">
+
+<label class="fw-bold">SQL</label>
+
+<div class="progress">
+<div class="progress-bar bg-warning"
+style="width:80%">
+80%
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="container py-5">
+
+<h2 class="section-title">
+Projects
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow-lg h-100">
+
+<div class="card-body">
+
+<span class="badge bg-primary">
+Academic Project
+</span>
+
+<h4 class="mt-3">
+Student Management System
+</h4>
+
+<p>
+Manage attendance, results and student records.
+</p>
+
+<button class="btn btn-outline-primary">
+Project Overview
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-lg h-100">
+
+<div class="card-body">
+
+<span class="badge bg-success">
+Web Project
+</span>
+
+<h4 class="mt-3">
+Election Management System
+</h4>
+
+<p>
+Online voting and candidate management portal.
+</p>
+
+<button class="btn btn-outline-success">
+Explore Project
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-lg h-100">
+
+<div class="card-body">
+
+<span class="badge bg-danger">
+Survey Portal
+</span>
+
+<h4 class="mt-3">
+Society Survey System
+</h4>
+
+<p>
+Collect and analyze resident feedback efficiently.
+</p>
+
+<button class="btn btn-outline-danger">
+Learn More
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="bg-primary text-white py-5">
+
+<div class="container">
+
+<h2 class="text-center mb-4">
+Contact Me
+</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-md-6">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<form>
+
+<div class="mb-3">
+
+<input type="text"
+class="form-control"
+placeholder="Enter Name"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<input type="email"
+class="form-control"
+placeholder="Enter Email"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<textarea
+class="form-control"
+rows="5"
+placeholder="Enter Message"
+required></textarea>
+
+</div>
+
+<button class="btn btn-primary w-100">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="text-center">
+
+<h5>Bindu Bhukya</h5>
+
+<p>Software Engineering Student</p>
+
+<p>
+LinkedIn | GitHub | Email
+</p>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
