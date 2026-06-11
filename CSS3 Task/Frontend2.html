@@ -10,7 +10,7 @@
 <div class="container mt-5">
     <div class="card shadow p-4">
         <h3 class="text-center mb-4">Student Registration Form</h3>
-        <form action="#" class="needs-validation">
+        <form action="#" class="needs-validation" id="registerForm">
             <div class="mb-3">
                 <label class="form-label">Name</label>
                 <input type="text" class="form-control" 
@@ -18,20 +18,20 @@
                        minlength="3" maxlength="30"
                        pattern="[A-Za-z ]{3,30}"
                        title="Only letters allowed (3-30 characters)"
-                       required>
+                       required id="name">
             </div>
             <div class="mb-3">
                 <label class="form-label">Roll Number</label>
                 <input type="text" class="form-control"
                        pattern="[0-9A-Za-z]{5,15}"
                        title="Alphanumeric roll number (5-15 chars)"
-                       required>
+                       required id="roll">
             </div>
             <div class="mb-3">
                 <label class="form-label">Email</label>
                 <input type="email" class="form-control"
                        placeholder="example@gmail.com"
-                       required>
+                       required id="email">
             </div>
             <div class="mb-3">
                 <label class="form-label">Mobile Number</label>
@@ -40,26 +40,26 @@
                        maxlength="10"
                        placeholder="10-digit mobile number"
                        title="Enter valid 10-digit Indian number"
-                       required>
+                       required id="mobile">
             </div>
             <div class="mb-3">
                 <label class="form-label d-block">Gender</label>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gender" required>
+                    <input class="form-check-input" type="radio" name="gender" value="male" required>
                     <label class="form-check-label">Male</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gender">
+                    <input class="form-check-input" type="radio" name="gender" value="female">
                     <label class="form-check-label">Female</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gender">
+                    <input class="form-check-input" type="radio" name="gender" value="others">
                     <label class="form-check-label">Others</label>
                 </div>
             </div>
             <div class="mb-3">
                 <label class="form-label">Branch</label>
-                <select class="form-select" required>
+                <select class="form-select" required id="branch">
                     <option value="">Select Branch</option>
                     <option>CSE</option>
                     <option>CSC</option>
@@ -74,11 +74,11 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Date of Birth</label>
-                <input type="date" class="form-control" required>
+                <input type="date" class="form-control" required id="dob">
             </div>
             <div class="mb-3">
                 <label class="form-label">Address</label>
-                <textarea class="form-control" rows="3" minlength="10" required></textarea>
+                <textarea class="form-control" rows="3" minlength="10" required id="add"></textarea>
             </div>
             <div class="mb-3">
                 <label class="form-label">Upload Photo</label>
@@ -90,10 +90,40 @@
                     I agree to Terms & Conditions
                 </label>
             </div>
-            <a class="btn btn-primary w-100" type="submit" href="Frontend3.html">Register
-        </a>
+            <button type="submit" class="btn btn-primary w-100">
+    Register
+</button>
         </form>
     </div>
 </div>
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let roll = document.getElementById("roll").value;
+    let email = document.getElementById("email").value;
+    let mobile = document.getElementById("mobile").value;
+    let dob = document.getElementById("dob").value;
+    let address = document.getElementById("add").value;
+    let branch = document.getElementById("branch").value;
+
+    let gender =
+    document.querySelector('input[name="gender"]:checked').value;
+
+    sessionStorage.setItem("name", name);
+    sessionStorage.setItem("roll", roll);
+    sessionStorage.setItem("email", email);
+    sessionStorage.setItem("mobile", mobile);
+    sessionStorage.setItem("gender", gender);
+    sessionStorage.setItem("branch", branch);
+    sessionStorage.setItem("dob", dob);
+    sessionStorage.setItem("address", address);
+
+    alert("Registration Successful");
+
+    window.location.href = "Frontend3.html";
+});</script>
 </body>
 </html>

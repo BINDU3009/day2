@@ -8,8 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header -->
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <a href="Bindex.html" class="navbar-brand d-flex align-items-center">
@@ -20,8 +18,6 @@
             </a>
         </div>
     </nav>
-
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container">
             <a href="Bindex.html" class="btn btn-secondary">Home</a>
@@ -32,8 +28,6 @@
             <a href="Bresults.html" class="btn btn-secondary">Poll Results</a>
         </div>
     </nav>
-
-    <!-- Registration Form -->
     <div class="container mt-5 mb-5">
 
         <div class="card shadow">
@@ -45,14 +39,14 @@
 
             <div class="card-body">
 
-                <form action="Bdashboard.html">
+                <form action="Bdashboard.html" id="registerForm">
 
                     <div class="mb-3">
                         <label class="form-label">
                             Full Name
                         </label>
                         <input type="text"
-                               class="form-control"
+                               class="form-control" id="fullname"
                                placeholder="Enter Full Name"
                                required>
                     </div>
@@ -62,7 +56,7 @@
                             Flat / House Number
                         </label>
                         <input type="text"
-                               class="form-control"
+                               class="form-control" id="flatno"
                                placeholder="Enter Flat Number"
                                required>
                     </div>
@@ -72,7 +66,7 @@
                             Email Address
                         </label>
                         <input type="email"
-                               class="form-control"
+                               class="form-control" id="email"
                                placeholder="Enter Email Address"
                                required>
                     </div>
@@ -82,7 +76,7 @@
                             Mobile Number
                         </label>
                         <input type="tel"
-                               class="form-control"
+                               class="form-control" id="tel"
                                placeholder="Enter Mobile Number"
                                pattern="[0-9]{10}"
                                required>
@@ -93,7 +87,7 @@
                             Password
                         </label>
                         <input type="password"
-                               class="form-control"
+                               class="form-control" id="password"
                                placeholder="Enter Password"
                                minlength="6"
                                required>
@@ -104,7 +98,7 @@
                             Confirm Password
                         </label>
                         <input type="password"
-                               class="form-control"
+                               class="form-control" id="cpassword"
                                placeholder="Confirm Password"
                                minlength="6"
                                required>
@@ -156,7 +150,47 @@
         </div>
 
     </div>
+   <script>
 
+document.getElementById("registerForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let fullname = document.getElementById("fullname").value;
+    let flatno = document.getElementById("flatno").value;
+    let email = document.getElementById("email").value;
+    let mobile = document.getElementById("tel").value;
+    let password = document.getElementById("password").value;
+    let cpassword = document.getElementById("cpassword").value;
+
+    let resident =
+    document.querySelector('input[name="resident"]:checked');
+
+    if(!resident){
+        alert("Please select Resident Type");
+        return;
+    }
+
+    resident = resident.value;
+
+    if(password !== cpassword){
+        alert("Passwords do not match");
+        return;
+    }
+
+    sessionStorage.setItem("fullname", fullname);
+    sessionStorage.setItem("flatno", flatno);
+    sessionStorage.setItem("email", email);
+    sessionStorage.setItem("mobile", mobile);
+    sessionStorage.setItem("resident", resident);
+
+    alert("Registration Successful");
+
+    window.location.href = "Bdashboard.html";
+
+});
+
+</script>
     <footer class="bg-dark text-white text-center p-3">
         <p class="mb-0">
             © 2026 Election Management System. All Rights Reserved.
