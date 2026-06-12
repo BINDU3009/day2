@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <h2 id="heading"><center><b>Welcome to ES6</b></center></h2>
+   <!-- <button id="clickbtn" onclick="cart()">Click Me</button> -->
+    <!-- <button id="clickbtn">Click</button> -->
+    <!-- <input type="text" id="uname">-->
+     <!-- <button onclick="sample()" id="btn">click</button> -->
+   <script>
+//variables and types
+    // let a=10
+    // console.log(a)
+    // console.log(typeof(a))
+    // a="do"
+    // console.log(a)
+    // var b="hello"
+    // console.log(b)
+    // console.log(typeof(b))
+    // b=23
+    // console.log(b)
+    // const c=58.456
+    // console.log(c)
+    // console.log(typeof(c))
+    // // c=89
+    // var b="hello hii"
+    // console.log(b)
+//functions
+        // function cart(){
+        //     console.log("Function created")
+        // }
+        // cart()
+        // let btn=document.getElementById("btn")
+        //     btn.addEventListener("click",function(){
+        // let uname=document.getElementById("uname").value
+        // console.log(uname)})
+//Event Deligations
+        //  let btn1=document.getElementById("btn")
+        //     btn1.addEventListener("click",sample)
+        // function sample(){
+        //     let heading=document.getElementById("heading")
+        //     heading.innerHTML="we are learning Java script functions"
+        // }
+//objects
+    // let obj={
+    //     name:"bindu",
+    //     age:25
+    // }
+    // console.log(obj)
+    // console.log(obj.name)
+    // console.log(obj["age"])
+    // obj.phone=5656
+    // console.log(obj)
+    // console.log(obj.phone)
+//Function Generators
+    // function ConstructFunc(){
+    //     this.a=10
+    //     this.b=20
+    //     this.display=function(){
+    //         console.log(a)
+    //         console.log(b)
+    //     }
+    // }
+    // let obj=new ConstructFunc()
+    // console.log(obj)
+//JSON
+    // let obj={
+    //     name:"bindu",
+    //     age:22,
+    //     add:"Kondapur"
+    // }
+    // let val=JSON.stringify(obj)
+    // console.log(val)
+//Strings
+    // let s="Hello"
+    // console.log(s)
+    // console.log(s.length)
+    // console.log(s.includes("el"))
+    // console.log(s.charAt(2))
+    // console.log(s.substring(2,6))
+    // console.log(s.indexOf("h"))
+    // console.log(s.toLowerCase())
+    // console.log(s.toUpperCase())
+    // console.log(s.split(""))
+//Arrays
+    // let a=[1,2,3,4,5,6]
+    // console.log(a)
+    // console.log(a[2])
+    // a.push(7,8,9,10)
+    // console.log(a)
+    // console.log(a[11])
+    // console.log(a.pop())
+    // console.log(a)
+    // a.unshift(11)
+    // console.log(a)
+    // a.shift()
+    // console.log(a)
+    // let arr=[11,12,13]
+    // a.push(arr)
+    // console.log(a)
+//callbacks
+        // function Message(name,callback){
+        //     console.log("hello "+name)
+        //     callback()
+        // } 
+        // function msg2(){
+        //     console.log("and bye")
+        // }
+        // Message("Bindu",msg2)
+//Ananamous callbacks
+        // function msg1(name,callback)
+        // {
+        //     console.log("hello "+name)
+        //     callback()
+        // }
+        // msg1("bindu",function(){
+        //     console.log("and bye")
+        // })
+//Callback Hell with setTimeOut()
+//    function main(){
+//     setTimeout(()=>
+//         {
+//             console.log("step1")
+//         },1000)
+//     setTimeout(()=>{
+//             console.log("step2")
+//         },500)
+//     setTimeout(()=>{
+//         console.log("step3")
+//     },1500)
+//    }
+//    main()
+//callback hell
+//     function main(callback){
+//         setTimeout(()=>{
+//             console.log("Main Function")
+//         })
+//         callback()
+//     }
+//     main(()=>{
+//         console.log("step1")
+//         main(()=>{
+//             console.log("step2")
+//             main(()=>{
+//                 console.log("step3")
+//                 main(()=>{
+//                     console.log("Finished")
+//                 })
+//             })
+//         })
+//     } 
+// )
+//Promises
+    // function main(message){
+    //     return new Promise((resolve)=>{
+    //         setTimeout(()=>{
+    //             console.log(message)
+    //         resolve()
+    //         },1000)
+    //     })
+    // }
+    // main("Main Function").then(()=>main("step1")).then(()=>main("step2"))
+//async and await
+//    function main(msg){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             console.log(msg)
+//             resolve()
+//         },1000)
+//     })
+//    }
+//    async function runtask() {
+//         await main("step1")
+//         await main("step2")
+//         await main("step3")
+//    }
+//    runtask();
+   </script>
+</body>
+</html>
