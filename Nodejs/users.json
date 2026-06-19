@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "name": "Aarav Sharma",
+    "email": "aarav1@example.com",
+    "age": 21,
+    "city": "Hyderabad"
+  },
+  {
+    "id": 2,
+    "name": "Diya Reddy",
+    "email": "diya2@example.com",
+    "age": 22,
+    "city": "Bangalore"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Verma",
+    "email": "rahul3@example.com",
+    "age": 23,
+    "city": "Chennai"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Patel",
+    "email": "sneha4@example.com",
+    "age": 20,
+    "city": "Mumbai"
+  },
+  {
+    "id": 5,
+    "name": "Kiran Kumar",
+    "email": "kiran5@example.com",
+    "age": 24,
+    "city": "Delhi"
+  },
+  {
+    "id": 6,
+    "name": "Meera Joshi",
+    "email": "meera6@example.com",
+    "age": 21,
+    "city": "Pune"
+  },
+  {
+    "id": 7,
+    "name": "Arjun Singh",
+    "email": "arjun7@example.com",
+    "age": 22,
+    "city": "Kolkata"
+  },
+  {
+    "id": 8,
+    "name": "Ananya Rao",
+    "email": "ananya8@example.com",
+    "age": 23,
+    "city": "Vizag"
+  },
+  {
+    "id": 9,
+    "name": "Vikram Das",
+    "email": "vikram9@example.com",
+    "age": 25,
+    "city": "Jaipur"
+  },
+  {
+    "id": 10,
+    "name": "Pooja Nair",
+    "email": "pooja10@example.com",
+    "age": 20,
+    "city": "Kochi"
+  },
+  {
+    "id": 11,
+    "name": "Rohit Yadav",
+    "email": "rohit11@example.com",
+    "age": 24,
+    "city": "Lucknow"
+  },
+  {
+    "id": 12,
+    "name": "Kavya Iyer",
+    "email": "kavya12@example.com",
+    "age": 21,
+    "city": "Mysore"
+  },
+  {
+    "id": 13,
+    "name": "Aditya Mehta",
+    "email": "aditya13@example.com",
+    "age": 22,
+    "city": "Ahmedabad"
+  },
+  {
+    "id": 14,
+    "name": "Neha Gupta",
+    "email": "neha14@example.com",
+    "age": 23,
+    "city": "Noida"
+  },
+  {
+    "id": 15,
+    "name": "Siddharth Roy",
+    "email": "sid15@example.com",
+    "age": 25,
+    "city": "Patna"
+  },
+  {
+    "id": 16,
+    "name": "Ishita Kapoor",
+    "email": "ishita16@example.com",
+    "age": 20,
+    "city": "Bhopal"
+  },
+  {
+    "id": 17,
+    "name": "Manoj Kumar",
+    "email": "manoj17@example.com",
+    "age": 24,
+    "city": "Indore"
+  },
+  {
+    "id": 18,
+    "name": "Priya Sen",
+    "email": "priya18@example.com",
+    "age": 22,
+    "city": "Nagpur"
+  },
+  {
+    "id": 19,
+    "name": "Harsha Vardhan",
+    "email": "harsha19@example.com",
+    "age": 23,
+    "city": "Warangal"
+  },
+  {
+    "id": 20,
+    "name": "Nikhil Jain",
+    "email": "nikhil20@example.com",
+    "age": 21,
+    "city": "Surat"
+  },
+  {
+    "id": 21,
+    "name": "Lavanya Devi",
+    "email": "lavanya21@example.com",
+    "age": 22,
+    "city": "Tirupati"
+  },
+  {
+    "id": 22,
+    "name": "Rakesh Naidu",
+    "email": "rakesh22@example.com",
+    "age": 24,
+    "city": "Vijayawada"
+  },
+  {
+    "id": 23,
+    "name": "Divya Sharma",
+    "email": "divya23@example.com",
+    "age": 20,
+    "city": "Guntur"
+  },
+  {
+    "id": 24,
+    "name": "Ajay Mishra",
+    "email": "ajay24@example.com",
+    "age": 23,
+    "city": "Kanpur"
+  },
+  {
+    "id": 25,
+    "name": "Tanvi Kulkarni",
+    "email": "tanvi25@example.com",
+    "age": 22,
+    "city": "Nashik"
+  },
+  {
+    "id": 26,
+    "name": "Deepak Reddy",
+    "email": "deepak26@example.com",
+    "age": 25,
+    "city": "Hyderabad"
+  },
+  {
+    "id": 27,
+    "name": "Sai Teja",
+    "email": "saiteja27@example.com",
+    "age": 21,
+    "city": "Karimnagar"
+  },
+  {
+    "id": 28,
+    "name": "Keerthi Rao",
+    "email": "keerthi28@example.com",
+    "age": 22,
+    "city": "Anantapur"
+  },
+  {
+    "id": 29,
+    "name": "Riya Malhotra",
+    "email": "riya29@example.com",
+    "age": 23,
+    "city": "Chandigarh"
+  },
+  {
+    "id": 30,
+    "name": "Abhishek Singh",
+    "email": "abhishek30@example.com",
+    "age": 24,
+    "city": "Ranchi"
+  },
+  {
+    "id": 31,
+    "name": "Sana Khan",
+    "email": "sana31@example.com",
+    "age": 20,
+    "city": "Bangalore"
+  },
+  {
+    "id": 32,
+    "name": "Vivek Joshi",
+    "email": "vivek32@example.com",
+    "age": 22,
+    "city": "Pune"
+  },
+  {
+    "id": 33,
+    "name": "Akash Verma",
+    "email": "akash33@example.com",
+    "age": 23,
+    "city": "Delhi"
+  },
+  {
+    "id": 34,
+    "name": "Shreya Das",
+    "email": "shreya34@example.com",
+    "age": 21,
+    "city": "Mumbai"
+  },
+  {
+    "id": 35,
+    "name": "Tejaswini",
+    "email": "teja35@example.com",
+    "age": 22,
+    "city": "Hyderabad"
+  },
+  {
+    "id": 36,
+    "name": "Madhav Rao",
+    "email": "madhav36@example.com",
+    "age": 25,
+    "city": "Chennai"
+  },
+  {
+    "id": 37,
+    "name": "Pavan Kumar",
+    "email": "pavan37@example.com",
+    "age": 23,
+    "city": "Vizag"
+  },
+  {
+    "id": 38,
+    "name": "Aishwarya",
+    "email": "aish38@example.com",
+    "age": 21,
+    "city": "Kochi"
+  },
+  {
+    "id": 39,
+    "name": "Lokesh",
+    "email": "lokesh39@example.com",
+    "age": 24,
+    "city": "Mysore"
+  },
+  {
+    "id": 40,
+    "name": "Nandini",
+    "email": "nandini40@example.com",
+    "age": 20,
+    "city": "Tirupati"
+  },
+  {
+    "id": 41,
+    "name": "Suresh",
+    "email": "suresh41@example.com",
+    "age": 25,
+    "city": "Warangal"
+  },
+  {
+    "id": 42,
+    "name": "Bhavana",
+    "email": "bhavana42@example.com",
+    "age": 22,
+    "city": "Guntur"
+  },
+  {
+    "id": 43,
+    "name": "Charan",
+    "email": "charan43@example.com",
+    "age": 21,
+    "city": "Vijayawada"
+  },
+  {
+    "id": 44,
+    "name": "Sanjana",
+    "email": "sanjana44@example.com",
+    "age": 24,
+    "city": "Noida"
+  },
+  {
+    "id": 45,
+    "name": "Varun",
+    "email": "varun45@example.com",
+    "age": 23,
+    "city": "Patna"
+  },
+  {
+    "id": 46,
+    "name": "Monika",
+    "email": "monika46@example.com",
+    "age": 22,
+    "city": "Jaipur"
+  },
+  {
+    "id": 47,
+    "name": "Tarun",
+    "email": "tarun47@example.com",
+    "age": 20,
+    "city": "Lucknow"
+  },
+  {
+    "id": 48,
+    "name": "Reshma",
+    "email": "reshma48@example.com",
+    "age": 21,
+    "city": "Nagpur"
+  },
+  {
+    "id": 49,
+    "name": "Naveen",
+    "email": "naveen49@example.com",
+    "age": 25,
+    "city": "Surat"
+  },
+  {
+    "id": 50,
+    "name": "Swathi",
+    "email": "swathi50@example.com",
+    "age": 23,
+    "city": "Hyderabad"
+  }
+]
