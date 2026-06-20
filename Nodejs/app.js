@@ -186,15 +186,15 @@
 // })
 // app.listen(3000)
 //Route Parameters
-const express=require('express')
-const app=express()
-app.use(express.json())
-let users=[{
-    name:"bindu"
-}{
-    name:"vishnu"
-}]
-app.get('/users',(req,res)=>{
-    res.json(users)
-})
-app.listen(3000)
+// const express=require('express')
+// const app=express()
+// app.use(express.json())
+// let users=[{
+//     name:"bindu"
+// }{
+//     name:"vishnu"
+// }]
+// app.get('/users',(req,res)=>{
+//     res.json(users)
+// })
+// app.listen(3000)
